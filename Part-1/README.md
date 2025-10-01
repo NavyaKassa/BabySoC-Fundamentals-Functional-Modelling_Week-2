@@ -161,5 +161,43 @@ Integrates **analog, RF, and digital circuits** on a single chip to handle real-
 6. GDSII → Final chip layout file.
 7. Fabrication → Manufacturing of the chip in foundry.
 
+## What is VSD Baby SoC?
+**VSDBabySoC** is a lightweight yet powerful System-on-Chip (SoC) built on the RISC-V architecture. Its main purpose is to provide a platform for the first-time integration and testing of three open-source intellectual property (IP) cores, while also offering a setup for analog component calibration. Despite its compact design, BabySoC demonstrates the essential principles of digital–analog interaction inside a modern SoC.
+
+The SoC integrates three critical components:
+- RVMYTH Microprocessor – a simple, open-source RISC-V CPU for instruction execution and data handling.
+- 8x Phase-Locked Loop (PLL) – ensures a stable and synchronized clock signal for consistent operation.
+- 10-bit Digital-to-Analog Converter (DAC) – enables communication with external analog devices by generating usable analog signals.
+
+## System Operation:
+1. **Clock Initialization**
+When BabySoC receives an input trigger, the PLL is activated. The PLL generates a stable clock, which aligns the operation of the CPU and DAC. This synchronization is crucial for avoiding timing mismatches and maintaining system reliability.
+
+2. **Processing in RVMYTH**
+The RVMYTH processor is at the core of BabySoC’s functionality. It executes instructions and makes use of its r17 register to hold digital values. These values are updated in sequence, creating a continuous data stream that is passed to the DAC for further processing.
+
+3. **Digital-to-Analog Conversion**
+The DAC receives the digital stream from RVMYTH and converts it into an analog signal. This output is saved in a file named OUT and can also be fed into external devices such as televisions, mobile phones, or speakers. Through this process, BabySoC demonstrates how digital computation can directly generate multimedia signals.
+
+## Significance:
+VSDBabySoC is more than just a small-scale chip — it is an educational and experimental platform that highlights:
+- Integration of open-source IP cores.
+- The importance of clock synchronization in SoC operation.
+- How digital processors interact with analog systems.
+- Real-world applications of SoCs in multimedia and communication devices.
+
+![ALT](Images/BabySoC_block.jpg)
+
+## Summary:
+- A System-on-Chip (SoC) integrates CPU, memory, peripherals, and interconnects on a single chip.
+- SoCs improve performance, reduce cost, and save power compared to separate components.
+- BabySoC is a simplified educational SoC for learning core architecture concepts.
+- BabySoC uses a RISC-V based RVMYTH CPU, which handles instruction execution and data processing.
+- It includes an 8× PLL to generate a stable clock and synchronize all components.
+- A 10-bit DAC converts digital outputs from the CPU into analog signals for external devices.
+- Functional modelling with Icarus Verilog and GTKWave allows simulation of system behavior before RTL design.
+- Learners can observe CPU-memory-peripheral interactions and validate system logic early.
+- BabySoC provides hands-on experience for SoC verification, synthesis, and eventual physical design.
+- It serves as a foundation for advanced SoC design, bridging theory with practical implementation.
 
    
