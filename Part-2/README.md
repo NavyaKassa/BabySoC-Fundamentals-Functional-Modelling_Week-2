@@ -212,5 +212,5 @@ Recommended signals to monitor:
 ### 3. Troubleshooting Tips
 - Module Redefinition:
 If you encounter redefinition errors, make sure modules are included only once—either via the testbench or command line, not both.
- Path Issues:
+- Path Issues:
 Verify all -I paths are correct. Use full paths if relative paths cause compilation errors.
