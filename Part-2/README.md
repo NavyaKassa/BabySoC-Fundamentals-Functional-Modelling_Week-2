@@ -1,18 +1,19 @@
 # Part 2 – Labs (Hands-on Functional Modelling)
 
 ## Table of Contents:
-1. [Project Structure](#project-structure)
-2. [Requirements](#requirements)
-3. [Step-by-step Procedure for Functional Modelling](#step-by-step-procedure-for-functional-modelling)
-     - [Setup and Prepare Project Directory](#setup-and-prepare-project-directory)
-     - [VSDBabySoC Module Descriptions](#vsdbabysoc-module-descriptions)
-     - [Cloning the Project](#cloning-the-project)
-4. [TLV to Verilog Conversion Steps](#tlv-to-verilog-conversion-steps)
-5. [Simulation Steps](#simulation-steps)
-     - [Pre-Synthesis Simulation](#pre--synthesis-simulation)
-     - [Viewing Waveforms in GTKWave](viewing-the-waveform-in-gtkwave)
-     - [Viewing DAC output in analog mode](#viewing-dac-output-in-analog-mode)
-6. [Troubleshooting Tips](#trouble-shooting-tips)
+1. [Project Structure](#project-structure)  
+2. [Requirements](#requirements)  
+3. [Step-by-step Procedure for Functional Modelling](#step-by-step-procedure-for-functional-modelling)  
+     - [Setup and Prepare Project Directory](#setup-and-prepare-project-directory)  
+     - [VSDBabySoC Module Descriptions](#vsdbabysoc-module-descriptions)  
+     - [Cloning the Project](#cloning-the-project)  
+4. [TLV to Verilog Conversion Steps](#tlv-to-verilog-conversion-steps)  
+5. [Simulation Steps](#simulation-steps)  
+     - [Pre-Synthesis Simulation](#pre-synthesis-simulation)  
+     - [Viewing Waveforms in GTKWave](#viewing-waveforms-in-gtkwave)  
+     - [Viewing DAC output in analog mode](#viewing-dac-output-in-analog-mode)  
+6. [Troubleshooting Tips](#troubleshooting-tips)  
+
 
 ## Project Structure:
 
@@ -229,41 +230,12 @@ In the waveform viewer, you will see the following signals:
 
 To properly observe the DAC output, set the waveform viewer’s Data Format to Analog → Step.
 
-Viewing DAC Output in Analog Mode:
+### 3. Viewing DAC Output in Analog Mode:
 Drag the signals CLK, reset, OUT (DAC) (with Analog → Step enabled), and RV_TO_DAC[9:0] into the waveform viewer for analysis.
-
-
-## Simulation Types: Pre-Synthesis vs Post-Synthesis
-
-### 1. Pre-Synthesis Simulation
-- **What it is:**  
-  Simulation of the RTL (Verilog/VHDL) code exactly as written.
-
-- **Purpose:**  
-  To verify that the design functionally behaves as expected before synthesis.
-
-- **Advantages:**  
-  - Fast to run  
-  - Easy to debug (signal names match RTL code)  
-  - Detects coding mistakes, logic bugs, and testbench issues early  
-
-
-### 2. Post-Synthesis Simulation
-- **What it is:**  
-  Simulation of the gate-level netlist generated after synthesis.
-
-- **Purpose:**  
-  To confirm that the synthesized hardware (logic gates + mapped cells) still behaves like the RTL.
-
-- **Advantages:**  
-  - Ensures synthesis did not optimize away or misinterpret logic  
-  - Allows timing checks (with back-annotated delays)  
-  - Builds confidence that the actual hardware will function correctly  
-
 
 ![ALT](Images/pre_synth2.jpg)
 
-### 3. Troubleshooting Tips
+## Troubleshooting Tips
 - Module Redefinition:
 If you encounter redefinition errors, make sure modules are included only once—either via the testbench or command line, not both.
 - Path Issues:
