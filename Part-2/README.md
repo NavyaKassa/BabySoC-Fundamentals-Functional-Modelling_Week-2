@@ -1,4 +1,8 @@
-Part 2 – Labs (Hands-on Functional Modelling)
+# Part 2 – Labs (Hands-on Functional Modelling)
+
+## Table of Contents:
+1. Project Structure(#project-structure)
+
 
 ## Project Structure:
 
@@ -256,30 +260,4 @@ If you encounter redefinition errors, make sure modules are included only once�
 Verify all -I paths are correct. Use full paths if relative paths cause compilation errors.
 
 
-## Simulation Types: Pre-Synthesis vs Post-Synthesis
-
-### 1. Pre-Synthesis Simulation
-- **What it is:**  
-  Simulation of the RTL (Verilog/VHDL) code exactly as written.
-
-- **Purpose:**  
-  To verify that the design functionally behaves as expected before synthesis.
-
-- **Advantages:**  
-  - Fast to run  
-  - Easy to debug (signal names match RTL code)  
-  - Detects coding mistakes, logic bugs, and testbench issues early  
-
-
-### 2. Post-Synthesis Simulation
-- **What it is:**  
-  Simulation of the gate-level netlist generated after synthesis.
-
-- **Purpose:**  
-  To confirm that the synthesized hardware (logic gates + mapped cells) still behaves like the RTL.
-
-- **Advantages:**  
-  - Ensures synthesis did not optimize away or misinterpret logic  
-  - Allows timing checks (with back-annotated delays)  
-  - Builds confidence that the actual hardware will function correctly  
 
