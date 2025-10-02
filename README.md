@@ -29,7 +29,7 @@ This repository is intended for students, hobbyists, and engineers who want to l
 - Functional modelling: simulation of CPU-peripheral interaction
 - Observing system behavior using GTKWave
 
-### Part 2 – Hands-on Labs (Functional Modelling)(./Part-2)
+### Part 2 – [Hands-on Labs (Functional Modelling)](./Part-2)
 - Project setup and directory structure
 - Module descriptions (RVMYTH, PLL, DAC, testbench)
 - TLV → Verilog conversion for simulation
