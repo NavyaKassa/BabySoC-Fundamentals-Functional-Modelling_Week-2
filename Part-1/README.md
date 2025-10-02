@@ -186,7 +186,7 @@ VSDBabySoC is more than just a small-scale chip — it is an educational and exp
 - How digital processors interact with analog systems.
 - Real-world applications of SoCs in multimedia and communication devices.
 
-![ALT](Images/BabySoC_block.jpg)
+![ALT](Images/BabySoC_block.png)
 
 ## Summary:
 - A System-on-Chip (SoC) integrates CPU, memory, peripherals, and interconnects on a single chip.
