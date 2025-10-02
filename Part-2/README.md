@@ -7,11 +7,11 @@
      - [Setup and Prepare Project Directory](#1-setup-and-prepare-project-directory)  
      - [VSDBabySoC Module Descriptions](#2-vsdbabysoc-module-descriptions)  
      - [Cloning the Project](#3-cloning-the-project)  
-4. [TLV to Verilog Conversion Steps](#tlv-to-verilog-conversion-steps)  
+4. [TLV to Verilog Conversion Steps](#-tlv-to-verilog-conversion-steps)  
 5. [Simulation Steps](#simulation-steps)  
-     - [Pre-Synthesis Simulation](#pre-synthesis-simulation)  
-     - [Viewing Waveforms in GTKWave](#viewing-waveforms-in-gtkwave)  
-     - [Viewing DAC output in analog mode](#viewing-dac-output-in-analog-mode)  
+     - [Pre-Synthesis Simulation](#1-pre-synthesis-simulation)  
+     - [Viewing Waveforms in GTKWave](#2-viewing-waveforms-in-gtkwave)  
+     - [Viewing DAC output in analog mode](#3-viewing-dac-output-in-analog-mode)  
 6. [Troubleshooting Tips](#troubleshooting-tips)  
 
 
