@@ -1,8 +1,18 @@
 # Part 2 – Labs (Hands-on Functional Modelling)
 
 ## Table of Contents:
-1. Project Structure(#project-structure)
-
+1. [Project Structure](#project-structure)
+2. [Requirements](#requirements)
+3. [Step-by-step Procedure for Functional Modelling](#step-by-step-procedure-for-functional-modelling)
+     - [Setup and Prepare Project Directory](#setup-and-prepare-project-directory)
+     - [VSDBabySoC Module Descriptions](#vsdbabysoc-module-descriptions)
+     - [Cloning the Project](#cloning-the-project)
+4. [TLV to Verilog Conversion Steps](#tlv-to-verilog-conversion-steps)
+5. [Simulation Steps](#simulation-steps)
+     - [Pre-Synthesis Simulation](#pre--synthesis-simulation)
+     - [Viewing Waveforms in GTKWave](viewing-the-waveform-in-gtkwave)
+     - [Viewing DAC output in analog mode](#viewing-dac-output-in-analog-mode)
+6. [Troubleshooting Tips](#trouble-shooting-tips)
 
 ## Project Structure:
 
@@ -15,7 +25,7 @@ To work with this project, ensure the following tools and environment are availa
 - Icarus Verilog (iverilog) – Required for compiling Verilog source files.
 - GTKWave – Used to view and analyze simulation waveform files (.vcd).
 
-## Step-by-step Procedure:
+## Step-by-step Procedure for Functional Modelling:
 ## 1. Setup and Prepare Project Directory
 Clone or create the following directory structure for the VSDBabySoC project:
 ```
