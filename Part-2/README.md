@@ -4,15 +4,16 @@
 1. [Project Structure](#project-structure)  
 2. [Requirements](#requirements)  
 3. [Step-by-step Procedure for Functional Modelling](#step-by-step-procedure-for-functional-modelling)  
-     - [Setup and Prepare Project Directory](#setup-and-prepare-project-directory)  
-     - [VSDBabySoC Module Descriptions](#vsdbabysoc-module-descriptions)  
-     - [Cloning the Project](#cloning-the-project)  
+     - [Setup and Prepare Project Directory](#1-setup-and-prepare-project-directory)  
+     - [VSDBabySoC Module Descriptions](#2-vsdbabysoc-module-descriptions)  
+     - [Cloning the Project](#3-cloning-the-project)  
 4. [TLV to Verilog Conversion Steps](#tlv-to-verilog-conversion-steps)  
 5. [Simulation Steps](#simulation-steps)  
      - [Pre-Synthesis Simulation](#pre-synthesis-simulation)  
      - [Viewing Waveforms in GTKWave](#viewing-waveforms-in-gtkwave)  
      - [Viewing DAC output in analog mode](#viewing-dac-output-in-analog-mode)  
 6. [Troubleshooting Tips](#troubleshooting-tips)  
+
 
 
 ## Project Structure:
